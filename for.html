@@ -1,0 +1,58 @@
+<!--Creditos Carlos Alexandre Leutz-->
+<!--https://www.linkedin.com/in/carlos-leutz-1b1516185/-->
+<!--https://www.instagram.com/carlosalexandreleutz/?hl=pt-br-->
+<!--https://www.youtube.com/channel/UCd4MhWhSeqK1Ga4OKOPSxSw?view_as=subscriber-->
+
+<!--Loop com for-->
+
+<button onclick="loop()">aqui</button>
+
+<script>
+    //for ([inicialização]; [condição]; [expressão final]){
+    //declaração
+
+    //  }
+
+    for (var i = 0; i <= 9; i++) {
+        console.log(i)
+
+        if (i > 3) break
+    }
+
+
+    var i2 = 0;
+    for (;;) {
+        if (i2 > 3) break
+        console.log(i2)
+        i2++
+    }
+    var i3 = 0
+
+    function loop() {
+
+        if (i3 >= 0) {
+            i3++
+            console.log(i3)
+            fimLoop();
+
+
+
+        } else {
+
+            console.log(i3)
+        }
+
+
+    }
+
+    function fimLoop() {
+
+
+        if (i3 < 3) {
+            loop();
+
+        }
+
+
+    }
+</script>
